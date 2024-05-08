@@ -1,0 +1,54 @@
+.user_select_box label,.checkBoxLabel{
+    color: white;
+}
+.user-select{
+    width: 50%;
+    margin-top: 6px;
+}
+.user__item{
+    width: 45%;
+}
+.user_group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user__btn__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.save-btn{
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.clear-btn{
+    background-color: #dc3222; 
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.box2{
+    margin-top: 40px;
+}

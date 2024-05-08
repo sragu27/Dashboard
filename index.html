@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | index</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/boxicons.min.css"> -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />  
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sidebar col-lg-3 col-md-4" id="sideBar">
+        <!-- <div class="sidebar__container">
+          <div class="logo-details">
+            <div class="logo_name">Logo</div>
+            <i class='bx bx-menu' id="btn"></i>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <i class='bx bx-search'></i>
+              <input type="text" placeholder="Search...">
+            </li>
+            <li>
+              <a class="active" href="index.html">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#">
+                <i class='bx bx-user'></i>
+                <span class="links_name">User</span>
+                <i class='bx bx-chevron-down dropdown-icon'></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="messages.html">
+                <i class='bx bx-chat'></i>
+                <span class="links_name">Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="analytics.html">
+                <i class='bx bx-pie-chart-alt-2'></i>
+                <span class="links_name">Analytics</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#">
+                <i class='bx bx-folder'></i>
+                <span class="links_name">File Manager</span>
+                <i class='bx bx-chevron-down dropdown-icon'></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+              
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-cart-alt'></i>
+                <span class="links_name">Order</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-heart'></i>
+                <span class="links_name">Saved</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+              </a>
+            </li>
+            <li class="profile">
+              <div class="profile-details">
+                <div class="name_job">
+                  <div class="name">Logout</div>
+                </div>
+              </div>
+              <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+          </ul>
+
+        </div> -->
+        
+      </div>
+  
+      <section class="home-section col-lg-9 col-md-8">
+        <!-- header section -->
+        <div class="header__box" id="mainHeader">
+          <!-- <div class="welcome-message">
+            <p>Welcome</p>
+            <h6>Admin</h6>
+          </div> -->
+        </div>
+
+        <!-- main section -->
+        <div class="main__section">
+          <div class="wrapper">
+            <div class="main__title">
+              <h4>Dashboard</h4>
+            </div>
+            <div class="main__wrapper">
+              <div class="main_container">
+                <div class="card__collection">
+                  <div class="card__wrapper">
+                    <div class="card__item card1">
+                      <div class="card__inner">
+                        <div class="card__inner__item">
+                          <img src="images/coins.svg" alt="img_user">
+                        </div>
+                        <div class="card__inner__item">
+                          <p>Total rent User</p>
+                          <h2>586</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__item card2">
+                      <div class="card__inner">
+                        <div class="card__inner__item">
+                          <img src="images/coins.svg" alt="img_user">
+                        </div>
+                        <div class="card__inner__item">
+                          <p>Total rent User</p>
+                          <h2>586</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__item card3">
+                      <div class="card__inner">
+                        <div class="card__inner__item">
+                          <img src="images/coins.svg" alt="img_user">
+                        </div>
+                        <div class="card__inner__item">
+                          <p>Total rent User</p>
+                          <h2>586</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__item card4">
+                      <div class="card__inner">
+                        <div class="card__inner__item">
+                          <img src="images/coins.svg" alt="img_user">
+                        </div>
+                        <div class="card__inner__item">
+                          <p>Total rent User</p>
+                          <h2>586</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__wrapper">
+                  <div class="table__container">
+                    <div class="table__box">
+                      <div class="table__main col-lg-12 col-md-12">
+                        <div class="table-responsive">
+                          <table class="table table-striped table-hover table-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">S.no</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">6</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+
+    
+
+
+
+    <!-- jquery js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sideNavbar.js"></script>
+    <!-- <script src="js/boxicons.js"></script> -->
+
+    <script>
+
+  //   let sidebar = document.querySelector(".sidebar");
+  //   let closeBtn = document.querySelector("#btn");
+  //   let searchBtn = document.querySelector(".bx-search");
+
+  //   closeBtn.addEventListener("click", () => {
+  //   sidebar.classList.toggle("open");
+  //   menuBtnChange();
+  //   });
+
+  //   searchBtn.addEventListener("click", () => {
+  //   sidebar.classList.toggle("open");
+  //   menuBtnChange();
+  //   });
+
+  // function menuBtnChange() {
+  //   if (sidebar.classList.contains("open")) {
+  //     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+  //   } else {
+  //     closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  //   }
+  // }
+
+
+ 
+
+  
+
+
+
+
+    </script>
+    
+</body>
+</html>

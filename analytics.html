@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Analytics</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/analytics.css">
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />  
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- sidebar -->
+          <div class="sidebar col-lg-3 col-md-4" id="sideBar">
+          </div>
+
+            <section class="home-section col-lg-9 col-md-8">
+                <!-- header section -->
+                <div class="header__box" id="mainHeader"></div>
+
+                <div class="main__section">
+                    <div class="wrapper">
+                        <!-- main title -->
+                      <div class="main__title">
+                        <h4>Analytics</h4>
+                      </div>
+
+                        <div class="main__wrapper">
+                          <div class="grid-container">
+                            <div class="card item1">
+                              <div class="card__container">
+                                <div class="card__wrapper">
+                                  <div class="card__item">
+                                    <img src="images/thumb.svg" alt="">
+                                  </div>
+                                  <div class="card__item">
+                                    <h6>10k</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card item2">
+                              <div class="card__container">
+                                <div class="card__wrapper">
+                                  <div class="card__item">
+                                    <img src="images/award.svg" alt="">
+                                  </div>
+                                  <div class="card__item">
+                                    <h6>100</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card item3">
+                              <div class="card__container">
+                                <div class="card__wrapper">
+                                  <div class="card__item">
+                                    <img src="images/check.svg" alt="">
+                                  </div>
+                                  <div class="card__item">
+                                    <h6>200</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  
+                            <div class="card item4">
+                              <div class="card__container">
+                                <div class="chart__wrapper canvas-container">
+                                  <canvas id="barChart"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card item5">
+                              <div class="card__container">
+                                <div class="chart_wrapper canvas-container">
+                                  <canvas id="doughnutChart1"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card item6">
+                              <div class="card__container">
+                                <div class="chart_wrapper canvas-container">
+                                  <canvas id="doughnutChart2"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>      
+
+                    </div>
+                </div>      
+
+            </section>  
+
+
+
+
+        </div> 
+    </div>    
+    
+    
+    <!-- jquery js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sideNavbar.js"></script>
+    <!--Chart js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+   
+    <!-- <script src="js/boxicons.js"></script> -->
+
+    <script>
+      
+
+ //barchart     
+
+var ctx = document.getElementById("barChart").getContext('2d');
+var barChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sst", "Sun"],
+    datasets: [{
+      label: 'data-1',
+      data: [12, 19, 3, 17, 28, 24, 7],
+      backgroundColor: "#423a96"
+    }, {
+      label: 'data-2',
+      data: [30, 29, 5, 5, 20, 3, 10],
+      backgroundColor: "#0c0b2d"
+    }]
+  },options: {
+    responsive: true, // Make the chart responsive
+    maintainAspectRatio: false, // Allow the chart to resize freely
+  }
+});
+
+
+//piechart
+
+var doughnutChartOptions = {
+    responsive: false, // Set responsive to false
+    maintainAspectRatio: false,
+    cutoutPercentage: 70,
+    legend: {
+        display: true,
+        position: 'bottom',
+        labels: {
+            boxWidth: 12 // Adjust the width of the legend square
+        }
+    }
+};
+
+// Doughnut Chart 1
+var ctxDoughnut1 = document.getElementById("doughnutChart1").getContext('2d');
+var doughnutChart1 = new Chart(ctxDoughnut1, {
+    type: 'doughnut',
+    data: {
+        labels: ["Data 1", "Data 2"],
+        datasets: [{
+            data: [70, 30],
+            backgroundColor: [
+                '#0d323c',
+                '#491a45'
+            ],
+        }]
+    },
+    options: doughnutChartOptions // Apply the options
+});
+
+// Doughnut Chart 2
+var ctxDoughnut2 = document.getElementById("doughnutChart2").getContext('2d');
+var doughnutChart2 = new Chart(ctxDoughnut2, {
+    type: 'doughnut',
+    data: {
+        labels: ["Data 1", "Data 2"],
+        datasets: [{
+            data: [40, 60],
+            backgroundColor: [
+                '#c65617',
+                '#1e1a49'
+            ],
+        }]
+    },
+    options: doughnutChartOptions // Apply the options
+});
+
+
+
+  
+
+    </script>
+
+    
+</body>
+</html>

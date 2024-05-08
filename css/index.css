@@ -1,0 +1,42 @@
+
+.card__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.card__inner{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.card__item{
+  border-radius: 4px;
+  padding: 32px 16px;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+.card1{
+  background: #E6D922;
+}
+.card2{
+  background: #00B7C7;
+}
+.card3{
+  background: #00C77B;
+}
+.card4{
+  background: #dc3545;
+}
+.table__wrapper{
+  margin-top: 60px;
+}
+
+
+@media (max-width: 992px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+}
+
